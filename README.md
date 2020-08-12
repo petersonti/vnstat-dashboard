@@ -16,8 +16,9 @@ or
 `sudo chown -R vnstat: /var/lib/vnstat`
 
 ### enable startup
-`sudo systemctl enable vnstat
-sudo systemctl restart vnstat`
+`sudo systemctl enable vnstat`
+
+`sudo systemctl restart vnstat`
 
 ### Configure VNSTAT web
 `$vnstat_bin_dir = '/usr/bin/vnstat';`
