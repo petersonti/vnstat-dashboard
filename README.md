@@ -1,30 +1,30 @@
-# vnstat-dashboard
+### vnstat-dashboard
 
 An adaptation of vnstat-php-frontend by bjd using Bootstrap written in PHP.
 
-# install
+### install
 `apt install vnstat`
 
-# list network interface
+### list network interface
 `ip link show`
 or
 `netstat -i`
 
-# configure
+### configure
 `sudo vnstat -u -i` ifaces
 `sudo chown -R vnstat: /var/lib/vnstat`
 
-# enable startup
+### enable startup
 `sudo systemctl enable vnstat
 sudo systemctl restart vnstat`
 
-# Configure VNSTAT web
-`$vnstat_bin_dir = <div class="text-red">'/usr/bin/vnstat'</div>;
+### Configure VNSTAT web
+$vnstat_bin_dir = <div class="text-red">'/usr/bin/vnstat'</div>;
 $use_predefined_interfaces = <div class="text-red">true</div>;
 if ($use_predefined_interfaces == true) {
   $interface_list = array(<div class="text-red">"eth0"</div>);
   // ...
-}`
+}
 
 ### Features
 * Hourly Statistics Chart (using Google Charts)
