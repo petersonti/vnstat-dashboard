@@ -19,12 +19,12 @@ or
 sudo systemctl restart vnstat`
 
 ### Configure VNSTAT web
-`$vnstat_bin_dir = '/usr/bin/vnstat';
+$vnstat_bin_dir = '/usr/bin/vnstat';
 $use_predefined_interfaces = true;
 if ($use_predefined_interfaces == true) {
   $interface_list = array("eth0");
   // ...
-}`
+}
 
 ### Features
 * Hourly Statistics Chart (using Google Charts)
