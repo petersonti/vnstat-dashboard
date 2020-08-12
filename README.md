@@ -12,6 +12,7 @@ or
 
 ### configure
 `sudo vnstat -u -i` ifaces
+
 `sudo chown -R vnstat: /var/lib/vnstat`
 
 ### enable startup
@@ -19,12 +20,7 @@ or
 sudo systemctl restart vnstat`
 
 ### Configure VNSTAT web
-$vnstat_bin_dir = '/usr/bin/vnstat';
-$use_predefined_interfaces = true;
-if ($use_predefined_interfaces == true) {
-  $interface_list = array("eth0");
-  // ...
-}
+`$vnstat_bin_dir = '/usr/bin/vnstat';`
 
 ### Features
 * Hourly Statistics Chart (using Google Charts)
