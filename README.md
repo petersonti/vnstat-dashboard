@@ -15,6 +15,11 @@ or
 
 `sudo chown -R vnstat: /var/lib/vnstat`
 
+### add crontab
+cronbab -e
+`*/5 * * * * ~/bin/vnstat -u`
+
+
 ### enable startup
 `sudo systemctl enable vnstat`
 
